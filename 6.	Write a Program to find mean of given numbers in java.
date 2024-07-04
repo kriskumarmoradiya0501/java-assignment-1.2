@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class mean{
+    int a;
+    int b;
+    public void mean1(int a1,int b1){
+        a=a1;
+        b=b1;
+        System.out.print("Mean number of " + a + " and " + b + " " + ((a+b)/2));
+    }
+}
+
+public class ass_1_2_6 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter number1 : ");
+        int a  = s.nextInt();
+        System.out.print("Enter number2 : ");
+        int b  = s.nextInt();
+
+        mean m = new mean();
+        m.mean1(a,b);
+    }
+}
