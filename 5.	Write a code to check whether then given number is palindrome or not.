@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+class pal{
+    int number;
+    public void palindrom(int number1){
+        number = number1;
+        int num = number;
+        int reversed = 0;
+        while(num != 0) {
+            int remainder = num % 10;
+            reversed = reversed * 10 + remainder;
+            num /= 10;
+        }
+
+        if(reversed==number) {
+            System.out.println(number + " is Palindrome.");
+        }
+        else {
+            System.out.println(number+" is not Palindrome.");
+        }
+    }
+}
+
+public class ass_1_2_5 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Enter number which you want to check the number is palindrome or not : ");
+        int number = s.nextInt();
+
+        pal p = new pal();
+
+        p.palindrom(number);
+    }
+}
