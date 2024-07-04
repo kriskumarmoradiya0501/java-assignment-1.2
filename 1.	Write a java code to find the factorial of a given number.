@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+
+class fac{
+
+	void fact(float fac1){
+        	float fac = fac1;
+        	float fact = 1.0f;
+        	for (int j=1;j<=fac;j++){
+            		fact *=j;
+        	}	
+       		 System.out.println("The factorial of "+fac+" is "+fact);
+	}
+
+}
+
+
+public class ass_1_2_1 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+	
+		System.out.print("Enter number for find Factorial of it : ");
+		float num=s.nextFloat();
+
+		fac f = new fac();
+
+		f.fact(num);
+    }
+}
