@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+class arm{
+    int number;
+    public void armstrong(int number1){
+        number = number1;
+        int num = number;
+        int reversed = 0;
+        while(num != 0) {
+            int remainder = num % 10;
+            reversed += (remainder * remainder * remainder);
+            num /= 10;
+        }
+        if (reversed == number){
+            System.out.println("is Armstorng");
+        }
+        else{
+            System.out.println("is not Armstorng");
+        }
+
+    }
+}
+
+public class ass_1_2_9 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Enter number which you want to check the number is palind or not : ");
+        int number = s.nextInt();
+
+    }
+}
