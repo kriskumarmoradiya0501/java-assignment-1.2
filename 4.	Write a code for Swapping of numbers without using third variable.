@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class swap{
+    int a;
+    int b;
+    public void swap1(int a1,int b1){
+        a=a1;
+        b=b1;
+        System.out.println("Before : A = "+a+" B = "+b);
+        a = a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("After : A = "+a+" B = "+b);
+    }
+}
+
+public class ass_1_2_4 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter number A : ");
+        int a = s.nextInt();
+        System.out.println("Enter number B : ");
+        int b = s.nextInt();
+
+        swap s1 = new swap();
+
+        s1.swap1(a,b);
+    }
+}
