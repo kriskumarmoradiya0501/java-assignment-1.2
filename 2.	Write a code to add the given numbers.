@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class add{
+    int num1;
+    int num2;
+    public void add1(int a1,int b1){
+        num1 =a1;
+        num2=b1;
+        int sum = num2+num1;
+        System.out.println(num1+" + "+num2+" = "+sum);
+    }
+}
+
+public class ass_1_2_2 {
+    public static void main(String[] args) {
+
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Enter number1 : ");
+        int num1 = s.nextInt();
+
+        System.out.print("Enter number2 : ");
+        int num2 = s.nextInt();
+
+        add a = new add();
+        a.add1(num1,num2);
+    }
+}
