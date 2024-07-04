@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+class per{
+    int number;
+    public void perfect(int n){
+        number = n;
+        boolean isPerfect = false;
+        int sum = 0;
+        for (int i = 1; i <= number / 2; i++) {
+            if (number % i == 0) {
+                sum += i;
+            }
+        }
+        if (sum == number) {
+            isPerfect = true;
+        }
+        if (isPerfect) {
+            System.out.println(number + "perfect number.");
+        } else {
+            System.out.println(number + "not perfect number.");
+        }
+    }
+}
+
+public class ass_1_2_7 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter number : ");
+        int number = s.nextInt();
+
+        per p = new per();
+
+        p.perfect(number);
+    }
+}
